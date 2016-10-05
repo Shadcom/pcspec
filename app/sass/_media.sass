@@ -29,11 +29,11 @@
 		.logo-container
 			img
 				width: 65px
-				padding-top: 13px
+				padding-top: 0px
 
 		.name-head
 			padding-left: 20px
-			padding-top: 15px
+			padding-top: 0px
 			line-height: 20px
 			h1
 				font-size: 1.3em	
@@ -41,7 +41,7 @@
 			color: 000
 			font-size: 1.1em
 			font-weight: 600
-			margin-top: 12px
+			margin-top: -4px
 			padding-top: 13px
 
 			.fa
@@ -55,6 +55,8 @@
 			font-size: 1em
 			margin-top: 2px
 			
+			a
+				margin-top: 1px			
 
 		.cart-content
 			font-size: 0.8em
@@ -67,13 +69,38 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+	header
+		.logo-container
+			text-align: center
+			padding-top: 5px
+			img
+				width: 55px
+				padding-top: 0px
 
+		.name-head
+			text-align: center		
+			padding-left: 20px
+			padding-top: 0px
+			line-height: 15px
+			h1
+				font-size: 1.1em
+				margin-top: 2px
+			h2
+				font-size: .9em		
+		.head-cart
+			text-align: center	
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
-
+	header
+		.vert
+			margin-top: -11px
+			font-size: .97em	
+		.head-cart
+			margin-top: -5px
+		.black-head-font
+			.fa
+				margin-right: 3px	
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
