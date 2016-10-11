@@ -10,11 +10,10 @@ a
     color: #000
 
 .main_color_bg
-    background-color: $colorYellow
-    border-bottom: 2px solid #ccc
+    background-color: $TopHeaderColor
+    border-bottom: 2px solid $borderColor
 
 .logo-container
-    
     padding-top: 27px
     
     img
@@ -44,7 +43,7 @@ a
  
     .fa
         margin-right: 10px
-        color: #545652
+        color: $faColor
 
 .vert
     margin-top: 12px        
@@ -57,9 +56,9 @@ a
             margin-top: 27px
 
             &:hover
-                color: #A6451D    
+                color: $mainBlueColor//*#A6451D  */   
                 .fa-shopping-cart
-                    color: #A6451D
+                    color: $mainBlueColor
 
 .fa-shopping-cart
     font-size: 1.3em
@@ -79,14 +78,105 @@ a
 
 /***** top-mnu*****/
 .top-nav
-    background-color: #BF9861
+    background-color: $bgColorMnu
+    height: 40px
+    line-height: .5
+    border-top: 2px solid $borderColor
 .top-mnu
     list-style-type: none
+    padding: 0
     li
         display: inline-block
         font-size: 1.1em
         font-weight: 600
         margin-right: 15px
+
+        &.active
+            a
+                color: #3F4867
+                border-bottom: 2px solid $mainBlueColor
+        a
+            border-bottom: none
+            transition: all .1s ease
+            text-decoration: none
+            &:hover
+                color: $mainBlueColor
+                border-bottom: 2px solid $mainBlueColor
+                
+                     
+.top-serch
+    margin-top: 6px
+    text-align: right
+    position: relative
+
+    input[type="search"] 
+        box-sizing: border-box
+        border-radius: 4px
+        border: 1px solid $bgColorMnu
+        width: 200px
+        padding-right: 25px
+        height: 100%
+
+.seButton
+    display: block
+    border: none
+    
+    position: absolute
+    top: 0
+    right: 0
+    height: 100%
+    padding: 0 8px
+    background-color: $TopHeaderColor
+    color: $borderColor
+    transition: background-color .5s ease
+
+    .fa
+        color: $faColor
+    &:hover
+        background-color: $mainBlueColor
+        .fa
+            color: #fff    
+
+//***** saidebar  ******/
+
+.aside-nav
+    border: 1px solid $borderColor
+    margin-top: 10px
+    border-radius: 4px
+    h3
+        background-color: $TopHeaderColor
+        margin: 0
+        padding-left: 10px
+    .saibar-menu
+        margin: 0
+        padding: 0
+        list-style-type: none
+        li
+            margin-bottom: -1px
+            border-bottom: 1px solid $borderColor
+                        
+            &:last-child
+                border-bottom: none
+                a
+                    border-bottom-left-radius: 4px
+                    border-bottom-right-radius: 4px
+            a
+                display: block
+                padding: 8px 0 8px 10px
+                text-decoration: none
+                color: #0088cc
+                &:hover
+                    background-color: #ccc//#f5f5f5 */
+                
+                    
+        .active
+            background-color: #ccc
+            border-left: 3px solid #0088cc
+            &:last-child    
+                border-bottom-left-radius: 4px     
+            
+            
+
             
 
 
