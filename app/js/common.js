@@ -13,12 +13,17 @@ $(document).ready(function() {
 
 	// Owl Carousel
 
-	 $("#owl-demo").owlCarousel({
+	var owl = $("#owl-demo");
+
+	owl.owlCarousel({
  
       
+	  pagination : false,
       slideSpeed : 300,
       paginationSpeed : 400,
-      singleItem:true
+      singleItem:true,
+	  autoPlay: true,
+	  itemsMobile : false
  
       // "singleItem:true" is a shortcut for:
       // items : 1, 
@@ -26,8 +31,15 @@ $(document).ready(function() {
       // itemsDesktopSmall : false,
       // itemsTablet: false,
       // itemsMobile : false
- 
-  });
+ 	  });
+
+	   // Custom Navigation Events
+	$(".next").click(function(){
+    owl.trigger('owl.next');
+  	})
+  	$(".prev").click(function(){
+    owl.trigger('owl.prev');
+  	})
 
 
 });
