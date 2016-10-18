@@ -19,18 +19,12 @@ $(document).ready(function() {
  
       
 	  pagination : false,
-      slideSpeed : 300,
-      paginationSpeed : 400,
+      slideSpeed : 800,
+      paginationSpeed : 1200,
       singleItem:true,
 	  autoPlay: true,
 	  itemsMobile : false
- 
-      // "singleItem:true" is a shortcut for:
-      // items : 1, 
-      // itemsDesktop : false,
-      // itemsDesktopSmall : false,
-      // itemsTablet: false,
-      // itemsMobile : false
+       
  	  });
 
 	   // Custom Navigation Events
@@ -41,5 +35,17 @@ $(document).ready(function() {
     owl.trigger('owl.prev');
   	})
 
+// выравнивание групп товаров
+
+	function setEqualHeight(columns) { 
+		var tallestcolumn = 0; 
+		columns.each( function() { 
+			currentHeight = $(this).height(); 
+			if(currentHeight > tallestcolumn) { tallestcolumn = currentHeight; } } ); 
+			columns.height(tallestcolumn); 
+	} 
+		
+	setEqualHeight($(".cat-name")); 
+	
 
 });

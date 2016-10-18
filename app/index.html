@@ -30,21 +30,26 @@
 
 		<!-- Load Fonts CSS Start -->
 		<script>
-			loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" ); // Loading fonts, if the site is located in a subfolder
-			// loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
+			//loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" ); // Loading fonts, if the site is located in a subfolder
+			 loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
 		</script>
-		<link rel="stylesheet" href="fonts/Awsome/css/font-awesome.min.css">
+		
 		<!-- Load Fonts CSS End -->
 
 		<!-- Load Custom CSS Start -->
 		<!--<Deject>--><script>loadCSS( "header.min.css?ver=1.0.0", false, "all" );</script><!--</Deject>-->
-		<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+		<script>
+			loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );
+			loadCSS( "fonts/Awsome/css/font-awesome.min.css", false, "all" );
+
+		</script>
 		<!-- Load Custom CSS End -->
 
 		<!-- Load Custom CSS Compiled without JS Start -->
 		<noscript>
 			<link rel="stylesheet" href="css/fonts.min.css">
 			<link rel="stylesheet" href="css/main.min.css">
+			<link rel="stylesheet" href="fonts/Awsome/css/font-awesome.min.css">
 		</noscript>
 		<!-- Load Custom CSS Compiled without JS End -->
 
@@ -60,6 +65,7 @@
 	</head>
 
 <body>
+
 
 	<header class="main-head main_color_bg">
 
@@ -165,62 +171,65 @@
 					</div>
 
 					<div class="row">
-						<div class="col-sm-4 col-xs-12">
+						<div class="col-sm-4 col-xs-6">
 							<div class="cat-wrapper">
 								<a href="#">
 									<figure>
-										<img src="img/rukava.jpg" alt="Рукава">
-										<figcaption>Рукава</figcaption>
+										<img src="img/rukava.png" alt="Рукава">
+										<figcaption class="cat-name">Рукава</figcaption>
 									</figure>
 								</a>
 							</div>
 						</div>
-						<div class="col-sm-4 col-xs-12">
+						<div class="col-sm-4 col-xs-6">
 							<div class="cat-wrapper">
 								<a href="#">
 									<figure>
-										<img src="img/rukava.jpg" alt="Рукава">
-										<figcaption>Кольца, уплотнители</figcaption>
+										<img src="img/kolca.png" alt="Кольца, уплотнители">
+										<figcaption class="cat-name">Кольца, уплотнители</figcaption>
 									</figure>
 								</a>
 							</div>
 						</div>
-						<div class="col-sm-4 col-xs-12">
+						<div class="col-sm-4 col-xs-6">
 							<div class="cat-wrapper">
 								<a href="#">
 									<figure>
-										<img src="img/rukava.jpg" alt="Рукава">
-										<figcaption>Манжеты армированные</figcaption>
+										<img src="img/manzheti.png" alt="Манжеты армированные">
+										<figcaption class="cat-name">Манжеты армированные</figcaption>
 									</figure>
 								</a>
 							</div>
 						</div>
-						<div class="col-sm-4 col-xs-12">
+						
+
+						
+						<div class="col-sm-4 col-xs-6">
 							<div class="cat-wrapper">
 								<a href="#">
 									<figure>
-										<img src="img/rukava.jpg" alt="Рукава">
-										<figcaption>Ремни</figcaption>
+										<img src="img/remni.png" alt="Ремни">
+										<figcaption class="cat-name">Ремни</figcaption>
 									</figure>
 								</a>
 							</div>
 						</div>
-						<div class="col-sm-4 col-xs-12">
+						<div class="col-sm-4 col-xs-6">
 							<div class="cat-wrapper">
 								<a href="#">
 									<figure>
-										<img src="img/rukava.jpg" alt="Рукава">
-										<figcaption>Техпластина, клей</figcaption>
+										<img src="img/tehplastina.png" alt="Техпластина, клей">
+										<figcaption class="cat-name">Техпластина, клей</figcaption>
 									</figure>
 								</a>
 							</div>
 						</div>
-						<div class="col-sm-4 col-xs-12">
+						<div class="col-sm-4 col-xs-6">
 							<div class="cat-wrapper">
 								<a href="#">
 									<figure>
-										<img src="img/rukava.jpg" alt="Рукава">
-										<figcaption>Формовые изделия</figcaption>
+										<img src="img/formizdeliya.png" alt="Формовые изделия">
+										<figcaption class="cat-name">Формовые изделия</figcaption>
 									</figure>
 								</a>
 							</div>
@@ -259,32 +268,51 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4">
-					<h3>О нас</h3>
+					<h3>Информация</h3>
 					<ul class="footer-mnu">
-							<li><a href="#">Главная</a></li>
-							<li><a href="#">О компании</a></li>
-							<li><a href="#">Контакты</a></li>
-
-						</ul>
-
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Карта сайта</a></li>
+					</ul>
 				</div>
 				<div class="col-sm-4">
 					<h3>Категории товаров</h3>
 					<ul class="footer-mnu">
-							<li><a href="#">Рукава</a></li>
-							<li><a href="#">Кольца, уплотнители</a></li>
-							<li><a href="#">Манжеты армированные</a></li>
-							<li><a href="#">Ремни</a></li>
-							<li><a href="#">Техпластина, клей</a></li>
-							<li><a href="#">Формовые изделия</a></li>
-							<li><a href="#">Товары народного потребления</a></li>
+						<li><a href="#">Рукава</a></li>
+						<li><a href="#">Кольца, уплотнители</a></li>
+						<li><a href="#">Манжеты армированные</a></li>
+						<li><a href="#">Ремни</a></li>
+						<li><a href="#">Техпластина, клей</a></li>
+						<li><a href="#">Формовые изделия</a></li>
+						<li><a href="#">Товары народного потребления</a></li>
 					</ul>
 				</div>
 				<div class="col-sm-4">
-					<h3>Адрес</h3>
+					<h3>Контакты</h3>
+					<ul class="footer-mnu">
+						<li><i class="fa fa-map-marker" aria-hidden="true"></i><span class="footer-contact-text">350042, г. Краснодар, ул. Колхозная, 53/2</span></li>
+						<li><i class="fa fa-phone" aria-hidden="true"></i><span class="footer-contact-text">+7 (861) 210-35-67</span></li>
+						<li><i class="fa fa-phone" aria-hidden="true"></i><span class="footer-contact-text">+7 (861) 210-07-60</span></li>
+						<li><i class="fa fa-envelope-o" aria-hidden="true"></i><span class="footer-contact-text">inbox@kfrti.ru</span></li>
+					</ul>
+					
 				</div>	
 
 			</div>
+			<div class="row">
+				<div class="copy-des">
+					<div class="col-sm-6">
+						<div class="copy-right">
+							© Проектная компания "Спектр" 2016
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="pcspec">Разработка сайта - <a href="https://www.pcspectrum.ru/">проектная компания "Спектр"</a> </div>
+					</div>
+				</div>	
+			</div>
+
 		</div>
 
 	</footer>

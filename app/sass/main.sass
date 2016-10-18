@@ -338,17 +338,18 @@ a
 	/* category */
 
 .cat-wrapper
-	margin: 10px
+	margin-top: 10px
 	padding: 10px
 	border: 1px solid $borderColor
 	border-radius: 4px
 	box-sizing: border-box
 	&:hover
 		box-shadow: -1px 1px 16px $borderColor
-		figcaption
+		figcaption, a
 			color: $mainBlueColor
 	img
 		max-width: 100%
+		height: auto
 	figure
 		text-align: center	
 	figcaption
@@ -364,6 +365,7 @@ a
 	margin-top: 10px
 	border-top: 2px solid $borderColor
 
+
 .footer-mnu
 	list-style-type: none
 	padding: 0
@@ -372,12 +374,19 @@ a
 		font-size: 1em
 		font-weight: 600
 		margin-right: 15px
-
 		
 		a
-			
-			
 			text-decoration: underline
 			&:hover
 				color: $mainBlueColor
+		.footer-contact-text
+			margin-left: 10px
+
+.copy-des
+	border-top: 2px solid $borderColor	
+.copy-right, .pcspec
+	font-size: 85%
+.pcspec
+	text-align: right
+
 				
