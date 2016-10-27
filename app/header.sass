@@ -3,3 +3,356 @@
 @import "sass/base"
 
 //First screen styles
+
+body
+	display: flex
+	min-height: 100vh
+	flex-direction: column	
+
+a
+	color: #000
+
+.main_color_bg
+	background-color: $TopHeaderColor
+	border-bottom: 2px solid $borderColor
+
+.logo-container
+	padding-top: 27px
+	
+	img
+		width: 90px
+
+.name-head
+	padding-top: 10px
+ 
+.main-head
+	h1
+		color: $mainBlueColor
+		text-transform: uppercase
+		font-size: 1.6em
+		display: inline-block
+		padding-top: 5px
+		margin: 7px 0 0 0
+	h2
+		margin: 0
+		color: $mainBlueColor
+		text-transform: uppercase
+		font-size: 1.1em     
+
+.black-head-font
+	color: 000
+	font-size: 1.3em
+	font-weight: 600
+ 
+	.fa
+		margin-right: 10px
+		color: $faColor
+
+.vert
+	margin-top: 12px        
+/*#808080*/
+.head-cart
+		a
+			vertical-align: middle
+			text-decoration: underline
+			display: block
+			margin-top: 27px
+
+			&:hover
+				color: $mainBlueColor//*#A6451D  */   
+				.fa-shopping-cart
+					color: $mainBlueColor
+
+.fa-shopping-cart
+	font-size: 1.3em
+
+.head-adr-comp
+	.p-adr
+		font-size: 0.8em
+		display: inline
+
+.cart-content
+	font-size: 1em
+	display: inline-block
+	margin: 0
+	span
+		font-weight: 600
+
+
+/***** top-mnu*****/
+.top-nav
+	background-color: $bgColorMnu
+	height: 42px
+	line-height: .5
+	border-top: 2px solid $borderColor
+.top-mnu
+	list-style-type: none
+	padding: 0
+	li
+		display: inline-block
+		font-size: 1.1em
+		font-weight: 600
+		margin-right: 15px
+
+		&.active
+			a
+				color: $mainBlueColor
+				border-bottom: 2px solid $mainBlueColor
+		a
+			border-bottom: none
+			transition: all .1s ease
+			text-decoration: none
+			&:hover
+				color: $mainBlueColor
+				border-bottom: 2px solid $mainBlueColor
+				
+					 
+.top-serch
+	margin-top: 8px
+	text-align: right
+	position: relative
+
+	input[type="search"] 
+		box-sizing: border-box
+		border-radius: 4px
+		border: 1px solid $bgColorMnu
+		width: 100%
+		padding-right: 35px
+		height: 100%
+		line-height: 1.4em
+		&:focus
+			border: 1px solid $mainBlueColor		
+
+.seButton
+	display: block
+	border: none
+	
+	position: absolute
+	top: 0
+	right: 0
+	height: 100%
+	padding: 0 8px
+	background-color: $TopHeaderColor
+	color: $borderColor
+	transition: background-color .5s ease
+
+	.fa
+		color: $faColor
+	&:hover
+		background-color: $mainBlueColor
+		.fa
+			color: #fff    
+
+
+.content
+	flex: 1
+
+//***** saidebar  ******/
+
+.aside-nav
+	border: 1px solid $borderColor
+	margin-top: 10px
+	border-radius: 4px
+	h3
+		background-color: $TopHeaderColor
+		margin: 0
+		padding-left: 10px
+	.saibar-menu
+		margin: 0
+		padding: 0
+		list-style-type: none
+		li
+			margin-bottom: -1px
+			border-bottom: 1px solid $borderColor
+			
+						
+			&:last-child
+				border-bottom: none
+				a
+					border-bottom-left-radius: 4px
+					border-bottom-right-radius: 4px
+			a
+				display: block
+				padding: 8px 0 8px 10px
+				text-decoration: none
+				color: #0088cc
+				transition: background-color .25s ease
+				&:hover
+					background-color: #ccc//#f5f5f5 */
+				
+					
+		.active
+			position: relative
+			background-color: #ccc
+			&:last-child 
+				border-bottom-left-radius: 4px
+				border-bottom-right-radius: 4px
+			&:before
+				border-left: 4px solid #0088cc
+				content: ''
+				display: block
+				height: 100%
+				left: 0
+				position: absolute
+				top: 0
+			&:last-child 
+				&:before   
+					border-bottom-left-radius: 4px     
+			
+/* Owl Carousel */
+
+
+
+
+
+.owl-carousel
+	.owl-wrapper
+		&:after
+			content: "."
+			display: block
+			clear: both
+			visibility: hidden
+			line-height: 0
+			height: 0
+		display: none
+		position: relative
+		transform: translate3d(0px, 0px, 0px)
+	display: none
+	position: relative
+	width: 100%
+	touch-action: pan-y
+	margin-top: 10px
+	.owl-wrapper-outer
+		overflow: hidden
+		position: relative
+		width: 100%
+		&.autoHeight
+			transition: height 500ms ease-in-out
+
+	.owl-item
+		float: left
+		position: relative
+		
+		.img-descr
+			position: absolute
+			top: 0
+			left: 10px
+			font-size: 1.4em
+			font-weight: 600
+			text-shadow: 1px 1px 2px #000
+			color: #fff
+
+
+
+.owl-controls
+	.owl-page, .owl-buttons div
+		cursor: pointer
+	user-select: none
+	tap-highlight-color: rgba(0, 0, 0, 0)
+
+
+
+.grabbing
+	cursor: url(img/grabbing.png) 8 8, move
+
+
+
+.owl-carousel
+	.owl-wrapper, .owl-item
+		-backface-visibility: hidden
+		transform: translate3d(0, 0, 0)
+
+
+.owl-theme .owl-controls
+	margin-top: 10px
+	text-align: center
+	.owl-buttons div
+		color: #FFF
+		display: inline-block
+		zoom: 1
+		display: inline
+		margin: 5px
+		padding: 3px 10px
+		font-size: 12px
+		border-radius: 30px
+		background: #869791
+		filter: Alpha(Opacity = 50)
+		opacity: 0.5
+	&.clickable .owl-buttons div:hover
+		filter: Alpha(Opacity = 100)
+		opacity: 1
+		text-decoration: none
+	.owl-page
+		display: inline-block
+		zoom: 1
+			
+		span
+			display: block
+			width: 12px
+			height: 12px
+			margin: 5px 7px
+			filter: Alpha(Opacity = 50)
+			opacity: 0.5
+			border-radius: 20px
+			background: #869791
+		&.active span
+			filter: Alpha(Opacity = 100)
+			opacity: 1
+	&.clickable .owl-page:hover span
+		filter: Alpha(Opacity = 100)
+		opacity: 1
+	.owl-page span.owl-numbers
+		height: auto
+		width: auto
+		color: #FFF
+		padding: 2px 10px
+		font-size: 12px
+		border-radius: 30px
+
+.owl-item.loading
+	min-height: 150px
+	background: url(img/AjaxLoader.gif) no-repeat center center		
+
+
+.owlCar
+	position: relative
+	.prev
+		position: absolute
+		left: -10px
+		top: 40%
+		font-size: 3em
+		color: $borderColor
+		opacity: .6	
+	.next
+		position: absolute
+		right: -10px
+		top: 40%
+		font-size: 3em
+		color: $borderColor
+		opacity: .6
+	.prev, .next
+		&:hover
+			cursor: pointer			
+			opacity: .8
+			text-shadow: 1px 1px 2px #000
+
+	/* category */
+
+.cat-wrapper
+	margin-top: 10px
+	padding: 10px
+	border: 1px solid $borderColor
+	border-radius: 4px
+	box-sizing: border-box
+	&:hover
+		box-shadow: -1px 1px 16px $borderColor
+		cursor: pointer
+		figcaption, a
+			color: $mainBlueColor
+	img
+		max-width: 100%
+		height: auto
+	figure
+		text-align: center	
+	figcaption
+		text-align: center		
