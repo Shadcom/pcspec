@@ -58,13 +58,26 @@
 		border-bottom: 1px solid #8C8C8C
 						
 		&:nth-child(even)
-			background-color: #D9D9D9
+			background-color: #E6E6E6//#D9D9D9
 				
 	.goods-table-name
 		text-align: left
 		padding-left: 10px	
+	.goods-table-price
+		text-align: right	
 	.goods-table-btn
-		margin: 3px 0				
+		margin: 3px 5px 3px 0
+		float: right
+		overflow: hidden
+		font-weight: 600
+		border: 1px solid $mainBlueColor
+		background-color: $TopHeaderColor
+		border-radius: 4px
+		&:hover
+			color: $mainBlueColor
+
+
+
 			
 /* footer */
 .ftr
