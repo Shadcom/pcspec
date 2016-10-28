@@ -1,0 +1,2 @@
+git remote add origin https://Shadcom@bitbucket.org/Shadcom/kfrti-2-front.git
+git push -u origin master
