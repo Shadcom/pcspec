@@ -40,7 +40,7 @@
 		margin-bottom: 0
 				
 	.counter-title, .counter-item
-		color: #E77943
+		color: $importantColor
 	a
 		color: $mainBlueColor
 	.cat-internal-wrapper_mnu
@@ -126,7 +126,7 @@
 		padding: 2px			
 	a
 		color: 	$mainBlueColor
-	input[type="number"]
+	input[type="number"] 
 		border-radius: 4px
 		border: 1px solid $borderColor
 	.delete-btn
@@ -175,10 +175,31 @@
 	border: 1px solid $mainBlueColor
 	&:hover
 		box-shadow: -1px 1px 10px $borderColor
-		background-color: #E77943
+		background-color: $importantColor
 		color: #fff
 .continue-shopping
 	font-weight: 600
+
+.contact-field
+	margin-bottom: 10px
+	&:focus
+			border: 1px solid $mainBlueColor
+
+.label-right
+	text-align: right
+	font-weight: 600
+.imp-sup, .note
+	color: 	$importantColor
+.order, .note
+	margin-left: 15px	
+
+
+input[type="tel"], .order-field
+		border-radius: 4px
+		border: 1px solid $borderColor
+		padding: 	
+	
+
 			
 /* footer */
 .ftr
