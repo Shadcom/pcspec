@@ -166,6 +166,7 @@
 												<th class="cart-table-name">Наименование</th>
 												<th class="cart-table-price">Ед. изм.</th>
 												<th class="cart-table-price">Кол-во</th>
+												<th class="cart-table-price">Кол-во eд.</th>
 												<th class="cart-table-price">Цена, руб.</th>
 												<th class="cart-table-price">Сумма, руб.</th>
 												
@@ -178,7 +179,10 @@
 												<td class="cart-table-name"><a href="#">Рукав В 12*10 dfcdfc sdfcsdfcsx sdfcsfdx safxsdfxsf sdfxsf</a></td>
 												<td class="cart-table-unit color-str">м</td>
 												<td class="cart-table-price color-str">
-													<input type="number" value="1" min="1" max="10000">	
+													5	
+												</td>
+												<td class="cart-table-price color-str">
+													3	
 												</td>
 												<td class="cart-table-price color-str">250 <i class="fa fa-rub" aria-hidden="true"></i></td>
 												
@@ -191,7 +195,10 @@
 												<td class="cart-table-name"><a href="#">Рукав В 12*10 dfcdfc sdfcsdfcsx sdfcsfdx safxsdfxsf sdfxsf</a></td>
 												<td class="cart-table-unit color-str">м</td>
 												<td class="cart-table-price color-str">
-													<input type="number" value="1" min="1" max="10000">	
+													5	
+												</td>
+												<td class="cart-table-price color-str">
+													3	
 												</td>
 												<td class="cart-table-price color-str">250 <i class="fa fa-rub" aria-hidden="true"></i></td>
 												
@@ -210,39 +217,49 @@
 									</table>
 									
 								
-								<form action="#">
+								<form action="#" class="order-form">
 									<div class="row contact-field">
-										<label for="phone_number" class="col-xs-2 label-right">Телефон<sup class="imp-sup">*</sup></label>
-										<input type="tel" class="col-xs-6" id="phone_number">
+										<label for="phone_number" class="col-xs-3 label-right">Телефон<sup class="imp-sup">*</sup></label>
+										<input type="tel" class="col-xs-6 order-field" id="phone_number">
 									</div>
 
 									<div class="row contact-field">
-										<label for="email" class="col-xs-2 label-right">Эл. почта<sup class="imp-sup">*</sup></label>
+										<label for="email" class="col-xs-3 label-right">Эл. почта<sup class="imp-sup">*</sup></label>
 										<input type="text" class="col-xs-6 order-field" id="email">
 									</div>
 
 									<div class="row contact-field">
-										<label for="customer-name" class="col-xs-2 label-right">Ф.И.О.<sup class="imp-sup">*</sup></label>
+										<label for="customer-name" class="col-xs-3 label-right">Ф.И.О.<sup class="imp-sup">*</sup></label>
 										<input type="text" class="col-xs-6 order-field" id="customer-name">
 									</div>	
 
 									<div class="row contact-field">
-										<label for="customer-company" class="col-xs-2 label-right">Компания</label>
+										<label for="customer-company" class="col-xs-3 label-right">Компания</label>
 										<input type="text" class="col-xs-6 order-field" id="customer-company">
 									</div>
 
 									<div class="row contact-field">
-										<label for="order-payment-method" class="col-xs-2 label-right">Оплата</label>
+										<label for="order-payment-method" class="col-xs-3 label-right">Оплата</label>
 										<select class="col-xs-6 order-field"  id="order-payment-method">
 											<option value="1">Безналичный расчет</option>
 											<option value="2">Наличными при получении</option>
 										</select>
 									</div>
-									<div class="row contact-field col-xs-6">
-										<div class="note contact-field"> * - обязательные поля</div>	
-										<input type="submit" value="Отправить заказ" class="order">
+
+									<div class="row">
+										<div class="note contact-field col-md-12"> * - обязательные поля</div>
 									</div>
-									В корзину
+									<div class="row">	
+										<div class="contact-field col-sm-3">
+											<a href="#" class="back-to-cart">Вернуться в корзину</a>		
+										</div>
+										<div class="contact-field col-sm-3">
+												
+											<input type="submit" value="Отправить заказ" class="order">
+										</div>
+										
+									</div>
+								
 								</form>
 								
 

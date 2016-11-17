@@ -180,9 +180,16 @@
 .continue-shopping
 	font-weight: 600
 
+//*** order form */
+
+.order-form
+		margin-top: 20px
+
+
 .contact-field
 	margin-bottom: 10px
-	&:focus
+	.order-field
+		&:focus
 			border: 1px solid $mainBlueColor
 
 .label-right
@@ -190,15 +197,25 @@
 	font-weight: 600
 .imp-sup, .note
 	color: 	$importantColor
-.order, .note
+.note
 	margin-left: 15px	
 
 
-input[type="tel"], .order-field
+.order-field
 		border-radius: 4px
 		border: 1px solid $borderColor
 		padding: 	
 	
+.back-to-cart
+	border: 1px solid $mainBlueColor
+	border-radius: 4px
+	padding: 5px
+	display: inline-block
+	font-size: 1.1em
+	&:hover
+		text-decoration: none
+		background-color: $borderColor
+		
 
 			
 /* footer */
