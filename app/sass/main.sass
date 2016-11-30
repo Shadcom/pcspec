@@ -229,11 +229,57 @@
 	font-weight: 600
 .p-name
 	color: #000
-	font-size: .8em
+	font-size: .7em
 	
-.product-description
-	.dt
-		font-weight: 600		
+
+
+
+.dl-horizontal
+	dt
+		float: left
+		width: 160px
+		clear: left
+		text-align: right
+		overflow: hidden
+		text-overflow: ellipsis
+		white-space: nowrap
+		font-weight: 600	
+	dd
+		margin-left: 180px	
+
+
+		
+.product-input 
+	border-radius: 4px
+	border: 1px solid #ccc
+	width: 180px
+	margin-bottom: 5px
+		
+.product-submit
+	margin: 3px 5px 3px 0
+	font-weight: 600
+	border: 1px solid $mainBlueColor
+	background-color: $TopHeaderColor
+	border-radius: 4px
+	&:hover
+		color: #fff
+		background-color: $mainBlueColor
+
+
+.product-characteristics
+	margin-top: 10px
+	width: 100%
+	max-width: 100%
+	
+	tr
+		border-bottom: 1px solid #8C8C8C
+		border-top: 1px solid #8C8C8C
+						
+		&:nth-child(odd)
+			background-color: #E6E6E6//#D9D9D9						
+	.left-table-col
+		font-weight: 600
+		padding-left: 5px		
 	
 			
 /* footer */
